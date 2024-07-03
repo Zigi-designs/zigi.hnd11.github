@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;1,300;1,500;1,600&display=swap');
+
+*,
+*::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+/* Container */
+.container {
+    padding: 1rem;
+    width: 100%;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+/* Top Navigation */
+a:link {
+    text-decoration: none;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.link ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.link a {
+    color: rgb(121, 118, 118);
+    margin-left: 2rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+a:hover {
+    color: darkturquoise;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .link ul {
+        flex-direction: column;
+    }
+
+    .link a {
+        margin: 0.5rem 0;
+    }
+}
+
+/* Image */
+.image {
+    display: block;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+/* Personal Info */
+.person_info {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Goals Section */
+.All_Goals {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.Goal_one, .Goal_two, .Goal_three {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.Goals {
+    border: 1px solid gray;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 3px 10px gray;
+    max-width: 12rem;
+    text-align: center;
+}
+
+@media (max-width: 400px) {
+    .All_Goals {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    .Goals {
+        width: 100%;
+        box-shadow: none;
+    }
+}
+
+/* Footer */
+.foot {
+    text-align: center;
+    margin-top: 2rem;
+    color: rgb(8, 8, 8);
+}
